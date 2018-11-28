@@ -704,6 +704,7 @@ public class GwtMockitoTest {
   interface ParameterizedTypeUiBinder extends UiBinder<DataGrid<String>, Object> {}
 
   private interface SampleInterface {
+    static final SampleInterface INSTANCE = GWT.create(SampleInterface.class);
     String doSomething();
   }
 
